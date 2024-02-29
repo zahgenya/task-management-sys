@@ -12,7 +12,7 @@ import { status, taskProps } from "../types";
 import SendIcon from "@mui/icons-material/Send";
 import DeleteIcon from "@mui/icons-material/Delete";
 import taskService from "../services/tasks";
-import FromDialog from "./dialogForm";
+import FormDialog from "./dialogForm";
 import React from "react";
 import { Task } from "../types";
 
@@ -113,7 +113,7 @@ const TaskColumn = ({
             {/* <IconButton aria-label='add' title='Add task'>
                 <AddTaskIcon />
           </IconButton> */}
-            <FromDialog setTasks={setTasks} />
+            <FormDialog setTasks={setTasks} />
           </Box>
         </Card>
       </Grid>
